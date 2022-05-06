@@ -18,22 +18,16 @@ Program will read a file from the current directory called "processes.in", which
 The program should ignore everything on a line after a # mark and ignore additional spaces in input.\
 
 ## Input Example ##
-
+```bash
 processcount 3        # Read 5 processes
-
 runfor 30             # Run for 15 time units
-
 use rr                # Can be fcfs, sjf, or rr
-
 quantum 3             # Time quantum – only if using rr
-
 process name P1 arrival 5 burst 7
-
 process name P2 arrival 2 burst 8
-
 process name P3 arrival 0 burst 11
-
 end
+```
 
 ## Output ##
 Generate a file called "processes.out".
