@@ -19,8 +19,8 @@ The program should ignore everything on a line after a # mark and ignore additio
 
 ## Input Example ##
 ```bash
-processcount 3        # Read 5 processes
-runfor 30             # Run for 15 time units
+processcount 3        # Read 3 processes
+runfor 30             # Run for 30 time units
 use rr                # Can be fcfs, sjf, or rr
 quantum 3             # Time quantum – only if using rr
 process name P1 arrival 5 burst 7
