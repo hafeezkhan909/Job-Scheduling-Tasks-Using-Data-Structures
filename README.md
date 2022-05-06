@@ -12,3 +12,29 @@ communication between processes is speeded up through data queues. The presence 
 Queues are flexible and do not require communications programming. They can manage requests on a single shared resource for CPU-scheduling. They don't require any knowledge of interprocess communication. The computer can handle multiple tasks simultaneously by using data queues. 
 
 Even when there are no jobs in the ready queue, the queue remains active, ready to process jobs as they enter the ready queue.
+
+## Input ##
+Program will read a file from the current directory called "processes.in", which will be formatted as shown below.
+The program should ignore everything on a line after a # mark and ignore additional spaces in input.\
+
+## Input Example ##
+processcount 3        # Read 5 processes
+runfor 30             # Run for 15 time units
+use rr                # Can be fcfs, sjf, or rr
+quantum 3             # Time quantum – only if using rr
+process name P1 arrival 5 burst 7
+process name P2 arrival 2 burst 8
+process name P3 arrival 0 burst 11
+end
+
+## Output ##
+Generate a file called "processes.out".
+
+## Limitations ##
+This version of Round-Robin should not run the scheduler immediately upon the arrival of a new process,
+unless the CPU is currently idle.
+
+The program will not be given an input that results in an ambiguous decision,
+such as identical arrival times for Round-Robin or identical burst lengths for SJF.
+
+
