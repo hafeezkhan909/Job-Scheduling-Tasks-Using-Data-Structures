@@ -18,6 +18,7 @@ Program will read a file from the current directory called "processes.in", which
 The program should ignore everything on a line after a # mark and ignore additional spaces in input.\
 
 ## Input Example ##
+
 processcount 3        # Read 5 processes
 runfor 30             # Run for 15 time units
 use rr                # Can be fcfs, sjf, or rr
