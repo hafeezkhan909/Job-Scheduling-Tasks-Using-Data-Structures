@@ -1,0 +1,7 @@
+processcount          # Read 5 processes
+runfor              # Run for 15 time units
+use                 # Can be fcfs, sjf, or rr
+quantum             # Time quantum – only if using rr
+process name Pi arrival n burst k
+
+end
